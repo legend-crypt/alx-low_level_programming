@@ -1,12 +1,20 @@
-#include <stdio.h>
+#include "main.h"
+
 /* This function print putchar
- * return none
+ * return 0 
 */
-void putcharFunction(){
-	printf("_putchar \n");
-}
-int main(void){
-	putcharFunction();
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
 	return (0);
 }
 
