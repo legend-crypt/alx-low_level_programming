@@ -1,18 +1,16 @@
 #include "main.h"
 /**
- *  print_alphabet - print in lowercase follwed by a new line
- *  @ch: the character to be check
- *  Return: no return
+ *  print_alphabet - print alphabet in lowercase
  */
 void print_alphabet(void)
 {
-	char ch;
+	char c;
 
-	ch = 'a';
-	while (ch <= 'z')
+	c = 'a';
+	while (c <= 'z')
 	{
-		_putchar(ch);
-		ch++;
+		_putchar(c);
+		c++;
 	}
 	_putchar('\n');
 
