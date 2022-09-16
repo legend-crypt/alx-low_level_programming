@@ -6,11 +6,17 @@
  */
 int _isupper(int c)
 {
-	for (int i = 'A'; i <= 'Z'; i++)
+	int i;
+
+	i = 'A';
+
+	while (i <= 'Z')
 	{
 		if (c == i)
 			return (1);
 		else
 			return (0);
+		i++;
 	}
+	return (0);
 }
