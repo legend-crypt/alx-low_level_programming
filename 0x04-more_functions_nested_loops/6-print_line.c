@@ -5,12 +5,6 @@
  */
 void print_line(int n)
 {
-	int i;
-	int ch;
-
-	i = 0;
-
-	ch = '_';
 
 	if (n <= 0)
 	{
@@ -18,11 +12,13 @@ void print_line(int n)
 	}
 	else
 	{
+		int i = 1;
+
 		while (i <= n)
 		{
-			_putchar(ch);
+			_putchar('_');
 			i++;
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
