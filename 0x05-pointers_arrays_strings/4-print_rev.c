@@ -9,26 +9,12 @@
 void print_rev(char *s)
 {
 	int len, i;
-	char *start, *end, temp;
 
-		len = strlen(s);
-	start = s;
-	end = s;
+	len = strlen(s);
 
-	for (i = 0; i < len - 1; i++)
+	for (i = len -1; i >= 0; i--)
 	{
-		end++;
+		_putchar(s[i]);
 	}
-
-	for (i = 0; i < len / 2; i++)
-	{
-		temp = *end;
-		*end = *start;
-		*start = temp;
-		start++;
-		end--;
-	}
-
-
-	printf("%s", s);
+	_putchar('\n');
 }
