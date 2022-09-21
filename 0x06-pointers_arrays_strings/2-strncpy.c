@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
- * *_strncpy - copy string to another 
+ * *_strncpy - copy string to another
  * @dest: the pointer to the string
  * @src: the string
- * @n the number of strings to be copied
+ * @n: the number of strings to be copied
  * Return: string
  */
 
