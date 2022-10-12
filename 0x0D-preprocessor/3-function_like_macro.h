@@ -2,6 +2,6 @@
 #define FUNCTION_LIKE_MACRO_H
 #include <stdio.h>
 
-#define ABS(X) abs(X)
+#define ABS(X) (X)
 
 #endif /* FUNCTION_LIKE_MACRO_H */
