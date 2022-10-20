@@ -4,7 +4,7 @@
  * add_node - add element a beginning of list
  * @head: update the head node
  * @str: the string to add
- * Return the node
+ * Return: the node
  */
 
 list_t *add_node(list_t **head, const char *str)
@@ -15,7 +15,7 @@ list_t *add_node(list_t **head, const char *str)
 	while (str[len])
 		len++;
 	if (new_node == NULL)
-		return NULL;
+		return (NULL);
 
 	new_node->str = strdup(str);
 	new_node->len = len;
