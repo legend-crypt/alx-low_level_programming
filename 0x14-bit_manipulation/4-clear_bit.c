@@ -1,22 +1,17 @@
 #include "main.h"
 
 /**
-  * clear_bit - set a given bit
-  * @n: the interger number to be set
-  * @index: the index to be set
-  * Return: 1 on success and -1 on error
-  */
+* clear_bit - sets the value of a given bit to 0
+* @n: pointer to the number to change
+* @index: index of the bit to clear
+*
+* Return: 1 for success, -1 for failure
+*/
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int mask;
-	unsigned int result;
-
 	if (index > 63)
 		return (-1);
-	if(!*n)
-		return (0);
-	mask = 1 << index;
-	result = mask ^ *~n;
-	*n = result;
+
+	*n = (~(1UL << index) & *n);
 	return (1);
 }
