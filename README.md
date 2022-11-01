@@ -1,1 +1,1 @@
-Getting started with C
+This repo contains files about struct
