@@ -3,7 +3,7 @@
 /**
  * delete_dnodeint_at_index - delete a node at a given index
  * @head: the head node;
- * @indext: the index where we are deleting
+ * @index: the index where we are deleting
  * Return: 1 on success and -1 when failed
  */
 
@@ -11,7 +11,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	unsigned int idx = 0;
 	dlistint_t *temp;
-	
+
 	if (*head == NULL)
 	{
 		return (-1);
@@ -30,7 +30,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 	temp = *head;
-	while(temp)
+	while (temp)
 	{
 		if (idx == index)
 		{
