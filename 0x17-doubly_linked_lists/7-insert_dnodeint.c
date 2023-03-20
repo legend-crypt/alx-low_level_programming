@@ -33,6 +33,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			new->next = temp->next; /* current next to front link*/
 			temp->next = new; /* back next link */
 			new->next->prev = new; /* from prev link */
+			return (new);
 		}
 		temp = temp->next;
 		count++;
@@ -42,6 +43,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		new->prev = temp; /* current prev to back link */
 		new->next = NULL; /* current next to NULL*/
 		temp->next = new; /* back next link */
+		return (new);
 	}
 	if (count < idx)
 	{
