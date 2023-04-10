@@ -24,19 +24,26 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		strcpy(new_node->key, key);
 		new_node->next = NULL;
 		ht->array[index] = new_node;
+		free(new_node);
 		return (1);
 	}
 	if (ht->array[index] != NULL)
 	{
+
 		temp = ht->array[index];
-		while(temp != NULL)
-		{
-			temp = temp->next;
-		}
 		strcpy(new_node->value, value);
 		strcpy(new_node->key, key);
-		temp->next = new_node;
-		new_node->next = NULL;
+		while(temp->next != NULL)
+		{
+			if (strcmp(temp->key, key) == 0)
+			{
+				break;
+			}
+			temp = temp->next;
+		}
+		new_node->next = temp;
+		temp = new_node;
+		free(new_node);
 		return (1);
 	}
 	return (1);
