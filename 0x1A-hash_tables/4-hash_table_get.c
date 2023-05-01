@@ -4,6 +4,7 @@
  * hash_table_get - get the value of a hash item associated with the key
  * @ht: the hash table we are getting the item from
  * @key: the key to be search
+ * Return: the value if success, NULL if failure
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
