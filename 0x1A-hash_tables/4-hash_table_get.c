@@ -21,5 +21,14 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (get_item == NULL)
 		return (NULL);
-	return (get_item->value);
+
+	while (get_item != NULL)
+	{
+		if (strcmp(get_item->key, key) == 0)
+		{
+			return get_item->value;
+		}
+		get_item = get_item->next;
+	}
+	return (NULL);
 }
