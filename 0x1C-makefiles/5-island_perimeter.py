@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 
 def island_perimeter(grid):
-    """
-        grid is a list of list of integers:
+    """Grid is a list of list of integers:
         0 represents a water zone
         1 represents a land zone
         Returns the perimeter of the island in the grid
-
         Args:
             grid (list): list of lists
-
-        Return (int): the perimeter of and island
+        Return:
+            the perimeter of and island
     """
     perimeter = 0
 
