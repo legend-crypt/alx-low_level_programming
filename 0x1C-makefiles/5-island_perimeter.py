@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""
+    No module was imported
+"""
 def island_perimeter(grid):
     """Grid is a list of list of integers:
         0 represents a water zone
